@@ -31,6 +31,7 @@ jobs:
         pip install pandas scikit-learn joblib mlflow
 
     - name: Run preprocessing script
+      # Menghilangkan working-directory agar script dijalankan dari root repo
       run: |
         python preprocessing/automate_Cecilia-Agnes-Vechrisda-Manalu.py
 
