@@ -31,9 +31,8 @@ jobs:
         pip install pandas scikit-learn joblib mlflow
 
     - name: Run preprocessing script
-      working-directory: preprocessing
       run: |
-        python automate_Cecilia-Agnes-Vechrisda-Manalu.py
+        python preprocessing/automate_Cecilia-Agnes-Vechrisda-Manalu.py
 
     - name: Run evaluation script (optional)
       working-directory: MLProject
